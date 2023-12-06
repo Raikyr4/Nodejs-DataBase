@@ -7,19 +7,18 @@ const path = require('path');
 const app = express();
 const routher= express.Router();
 
-//routher pesquisar 
 routher.get('/', function(req, res ){
   res.sendFile(path.join(__dirname+'/view'));
 })
 
 
 app.use(express.json());
-// lembrar de substituir pelo caminho onde está o meu projeto 
 
 //servir os elementos staticos como css e js
 app.use(express.static(path.join(__dirname))); 
+
 //servir os elementos html
-app.use(express.static(path.join(__dirname, 'ProjetoBD', 'html')));
+app.use(express.static(path.join(__dirname, 'ProjetoBD', 'html'))); // substitua pelo nome da pasta do seu projeto 
 
 app.use(cors());
 
