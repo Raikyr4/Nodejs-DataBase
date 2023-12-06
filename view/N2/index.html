@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho_BD</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body style="background-color: rgba(17,17,17,255)">
+
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 20px;">
+        <label for="scriptSelectlabel">ESCOLHA UM SCRIPT PARA RODAR</label>
+        <select id="scriptSelect">
+            <option value = "all"> </option>
+            <option value="Ex01.sql"> EX 01  </option>
+            <option value="Ex02.sql"> EX 02  </option>
+            <option value="Ex03.sql"> EX 03  </option>
+            <option value="Ex04.sql"> EX 04  </option>
+            <option value="Ex05.sql"> EX 05  </option>
+            <option value="Ex06.sql"> EX 06  </option>
+            <!-- <option value="Ex07.sql"> EX 07  </option> -->
+            <option value="Ex08.sql"> EX 08  </option>
+            <option value="Ex09.sql"> EX 09  </option>
+            <option value="Ex10.sql"> EX 10  </option>
+            <option value="Ex11.sql"> EX 11  </option>
+            <option value="Ex12.sql"> EX 12  </option>
+            <option value="Ex13.sql"> EX 13  </option>
+            <!-- <option value="Ex14.sql"> EX 14  </option> -->
+            <option value="Ex15.sql"> EX 15  </option>
+            <option value="Ex16.sql"> EX 16  </option>
+            <option value="Ex17.sql"> EX 17  </option>
+            <!-- <option value="Ex18.sql"> EX 18  </option> -->
+            <option value="Ex19.sql"> EX 19  </option><!-- está faltando apenas 1 registro -->
+            <option value="Ex20.sql"> EX 20  </option>
+
+            <!-- Adicionar mais opções aqui para cada script SQL -->
+        </select>
+        <button id="executeButton" onclick="ExecutaScript()">Executar Script</button>
+        <button id="clearButton" class="fa-solid fa-trash"onclick="LimpaLista()">Limpar Lista</button>
+        <input type="text" id="myInput" onkeyup="Pesquisa()" placeholder="Pesquise por nomes..">
+    </div>
+    
+
+    <div id="tabelaDiv">
+        <img src="/img/infinit.gif"id="loadingGif" style="width: 100%; height: 100%; display: block;"/>
+        <table id="tabelaDados"  >
+            <!-- Os dados do banco de dados serão inseridos aqui -->
+        </table>
+
+    </div>
+
+<script src="js/list.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    background-image: url('/img/background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+    background-color: black;
+    height: 50%;        
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(196, 195, 195, 0.795); /* Sombra para um visual futurista */
+    border-radius: 15px;
+    gap: 1em;
+}
+
+.btn {
+    background-color: #ffeba7;
+    color: #4d1070;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4d1070;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}

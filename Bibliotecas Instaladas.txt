@@ -1,0 +1,3 @@
+npm install cors
+npm install pg
+npm install express

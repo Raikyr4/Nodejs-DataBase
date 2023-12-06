@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#tabelaDiv {
+    width: 50%;
+    height: 500px; /* Ajuste a altura conforme necessário */
+    overflow: auto; /* Adiciona rolagem */
+    border-radius: 15px; /* Bordas arredondadas para um visual futurista */
+    /*box-shadow: 0px 0px 10px rgba(196, 195, 195, 0.795); /* Sombra para um visual futurista */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#tabelaDiv::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+#tabelaDiv::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); /* Cor do fundo da barra de rolagem */
+}
+
+#tabelaDiv::-webkit-scrollbar-thumb {
+    background-color: #9b4caf; /* Cor da barra de rolagem */
+    border-radius: 20px; /* Arredondamento da barra de rolagem */
+    border: 3px solid rgb(56, 56, 55); /* Cria um preenchimento em torno da barra de rolagem */
+}
+
+
+#tabelaDados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+    background-color: white; /* Adicionado para evitar transparência */
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  input[type=text]:focus {
+    width: 100%;
+  }
+
+#scriptSelect{
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #e7eee7;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+#executeButton, #clearButton {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #9b4caf;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 9px #5e2b6b; /* Adiciona sombra para dar efeito 3D */
+    transition: all 0.2s; /* Adiciona transição para suavizar o efeito de pressionar o botão */
+}
+
+#executeButton:active, #clearButton:active {
+    box-shadow: 0 5px #2e2e2e; /* Reduz a sombra quando o botão é pressionado */
+    transform: translateY(4px); /* Move o botão um pouco para baixo */
+}
+
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre as letras para melhor legibilidade */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para dar profundidade */
+    background-color: #9b4caf; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno para dar mais espaço ao texto */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+#tabelaDados td, #tabelaDados th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tabelaDados tr {
+    background-color: white; /* Adicionado para evitar transparência */
+}
+
+#tabelaDados tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabelaDados tr:hover {
+    background-color: #ddd;
+}
+
+#tabelaDados th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9b4caf;
+    color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
