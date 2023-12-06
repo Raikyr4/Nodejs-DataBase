@@ -1,0 +1,13 @@
+*EXECUTE ESSES COMANDOS EM ORDEM EM SEU CMD*
+
+OBS => substitua o nome 'meu-projeto' pelo nome da pasta projeto 
+
+mkdir meu-projeto 
+
+cd meu-projeto
+
+npm init
+
+touch server.js
+
+node server.js
